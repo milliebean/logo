@@ -1,0 +1,106 @@
+/* Global view aka Desktop view */
+
+body {
+    background-color: #EBEBEB;
+    font-family: 'Asap', sans-serif;
+
+}
+
+.container {
+    min-height: 500px;
+    width: 1024px;
+    margin: 0px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.header-container {
+    background-color: grey;
+    min-height: 100px;
+    margin-bottom: 40px;
+    font-size: large;
+    
+}
+
+header {
+    max-width: 1024px;
+    /* background-color: blueviolet; */
+    min-height: 100px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    text-align: left;
+}
+
+.nav a {
+    color: white;
+    text-align: right;
+    text-decoration: none;
+}
+
+
+.navbutton {
+    font-family: 'Asap', sans-serif;
+    padding: 11px 25px;
+    display: inline-block;
+    border: 1px solid white;
+    position: relative;
+    color: white;
+    margin: 10px;
+
+}
+
+
+.col {
+    background-color: rgb(46, 231, 160);
+    width: 30%;
+    margin-bottom: 40px;
+
+}
+
+.col p {
+    color: white;
+    font-size: .875 rem;
+    padding: 20px 25px;
+    line-height: 1.25rem;
+}
+
+.hide-desktop-only {
+    display: block;
+}
+
+
+.col img {
+    width: 100%;
+    height: auto;
+}
+
+.col p::first-line {
+    font-weight: 700;
+}
+
+
+/* Tablet view */
+@media (max-width: 768px) {
+
+.col {
+    width: 45%;
+}
+
+/* Mobile view */
+@media (max-width: 400px) {
+
+    .col {
+        width: 100%;
+    }
+
+    .hide-mobile-only {
+        display: none;
+    }
